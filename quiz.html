@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+    <div class="grid">
+        <h1>Javascript Quiz</h1>
+            <hr style="margin-bottom: 20px">
+        <div id="quiz">
+            
+            <button id="startBtn" onclick="startQuiz()">Start Quiz</button>
+            <p id="question"></p>
+ 
+            <div class="buttons">
+                <button id="btn0" onclick="checkAnswer(1)"><span id="choice0"></span></button>
+                <button id="btn1" onclick="checkAnswer(2)"><span id="choice1"></span></button>
+                <button id="btn2" onclick="checkAnswer(3)"><span id="choice2"></span></button>
+                <button id="btn3" onclick="checkAnswer(4)"><span id="choice3"></span></button>
+            </div>
+
+      
+ 
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress"></p>
+            </footer>
+        </div>
+        <div id="score">
+            <p id="marks"></p>
+            <button id="restartBtn" onclick="startQuiz()">Retake Quiz</button>
+        </div>
+    </div>
+
+ 
+ 
+<script src="quiz.js"></script>
+ 
+</body>
+</html>
